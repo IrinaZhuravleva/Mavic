@@ -1,0 +1,11 @@
+- var specs = [{'title': "Dlog-M 10 бит", 'text': "Mavic 2 Pro поддерживает цветовой профиль Dlog-M 10 бит с более широким динамическим диапазоном, дающим больше возможностей для цветокоррекции.", 'title2': "Камера Hasselblad", 'text2': "Камера Hasselblad L1D-20С известны эргономичным дизайном и превосходным качеством изображений."}, {'title': "Матрица CMOS 1", 'text': "Зона активной работы новой 1-дюймовой матрицы CMOS в четыре раза превышает показатели Mavic Pro", 'title2': "Видео HDR", 'text2': "Благодаря поддержке видео 4K HDR 10 бит, Mavic 2 Pro можно подсоединить к совместимому с HLG 4K ТВ и просматривать запись в полном цветовом спектре"}]
+
+
+each spec, index in specs
+	.specification__item
+		.specification__box
+			h4.specification__box-title= spec.title
+			p.specification__box-text= spec.text
+		.specification__box
+			h4.specification__box-title= spec.title2
+			p.specification__box-text= spec.text2

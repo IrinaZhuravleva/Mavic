@@ -1,0 +1,10 @@
+-   var benefits = [{'number': "1", 'img': "images/benefit-1.jpg", 'title': "Интеллектуальные режимы", 'text': "Mavic 2 унаследовал 6 стандартных режимов интеллектуальной съемки QuickShot:Roket/Dronie/Circle/Helix/Boomerang/Asteroid."}, {'number': "2", 'img': "images/benefit-2.jpg", 'title': "Active Track 2.0", 'text': "Усовершенствованный режим второго поколения распознаёт и отслеживает объекты ещё точнее, быстрее и умнее."}, {'number': "3", 'img': "images/benefit-3.jpg", 'title': "Панорамная съемка", 'text': "Mavic 2 поддерживает 4 режима панорамной съёмки: сферическая, 180 градусов, горизонтальная, вертикальная"}, {'number': "4", 'img': "images/benefit-4.jpg", 'title': "Крутая камера!", 'text': "Технология Hyperlapse в четырёх режимах исполнения. Улучшенный фото режим HDR Функция HyperLight для съёмки в условиях слабого освещения 4К съёмка"}];
+
+each benefit, index in benefits
+	.benefits__item
+		.benefits-num= benefit.number
+		.benefits__img
+			img(src= benefit.img alt='')
+		.benefits__info
+			h4.benefits__info-title= benefit.title
+			.benefits__info-text= benefit.text

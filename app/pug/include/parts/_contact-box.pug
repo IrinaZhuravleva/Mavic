@@ -1,0 +1,11 @@
+-   var contacts = [{'title': "", 'tel': "+70505676767", 'mail': "dgi.mavic2pro.kiev@mail.ru"}, {'title': "", 'tel': "+70505676767", 'mail': "dgi.mavic2pro.moscow@mail.ru"}, {'title': "", 'tel': "+70505676767", 'mail': "dgi.mavic2pro.minsk@mail.ru"}]
+
+each contact, index in contacts
+	.contacts__info-box
+		p.contacts__info-title= contact.title
+		a.contacts__info-phone(href='tel:' + contact.tel + '')= contact.tel
+		a.contacts__info-email(href='mailto:' + contact.mail + '')= contact.mail
+
+//- 	mixin linkList(text, link)
+//-     	li
+//-     		a(target!=attributes.target, class!=attributes.class href=link ) #{text}
