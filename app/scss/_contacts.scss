@@ -1,0 +1,115 @@
+.contacts{
+  &__inner {
+    display: flex;
+    margin-left: 50px;
+  }
+  &__info{
+    width: 240px;
+    margin-right: 60px;
+  }
+  &__info-box{
+    margin-bottom: 10px;
+  }
+  &__info-title{
+    font-size: 21px;
+    line-height: 24px;
+    @extend %ubuntu-bold;
+    margin: 27px 0 13px;
+  }
+  //form{
+  //  flex-direction: column;
+  //}
+  &__info-phone,
+  &__info-email{
+    font-size: 15px;
+    line-height: 18px;
+
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  &__info-email{
+    text-decoration: underline;
+  }
+  &__form{
+    width: 570px;
+    margin-right: 106px;
+  }
+  &__form-title{
+    font-size: 21px;
+    line-height: 24px;
+    @extend %ubuntu-bold;
+    margin: 0 0 13px;
+  }
+  &__form-text{
+    font-size: 15px;
+    line-height: 18px;
+    margin: 0 0 12px;
+  }
+  &__form-line{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__form-input{
+    width: 49%;
+    margin-bottom: 10px;
+  }
+  &__form-btn{
+    @extend %ubuntu-bold;
+    text-transform: uppercase;
+    border-radius: 2px;
+    padding: 9px 15px;
+    cursor: pointer;
+    color: #fff;
+    background-color: transparent;
+
+    border: 2px solid #fff;
+    transition: all .3s ease-in;
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+
+  &__form-textarea{
+    width: 100%;
+    min-height: 144px;
+    margin-bottom: 20px;
+    resize: none;
+  }
+
+  &__form-textarea,
+  &__form-input{
+    padding: 15px;
+    border: none;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 13px;
+    color: #fff;
+    @extend %ubuntu-regular;
+    line-height: 15px;
+    &::placeholder{
+      color: rgba(#fff, 0.4);
+    }
+  }
+  &__social-list{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+  }
+  &__social-item{
+    margin: 14px 0;
+  }
+}
+
+.footer{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 32px;
+  text-align: right;
+  &__copy{
+    font-size: 13px;
+    line-height: 15px;
+    color: rgba(#fff, 0.64);
+  }
+}

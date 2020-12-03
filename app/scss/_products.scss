@@ -1,0 +1,65 @@
+.products{
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+  }
+  &__text{
+    max-width: 440px;
+    p{
+      margin-bottom: 30px;
+    }
+  }
+  &__slider-box{
+    padding-top: 110px;
+    position: relative;
+  }
+  &__slider {
+
+    max-width: 560px;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 560px;
+      height: 276px;
+      border: 4px solid #ffffff;
+      top: -15px;
+      right: -17px;
+      z-index: -1;
+    }
+  }
+  &__slider-text{
+    width: 285px;
+    position: absolute;
+    text-align: right;
+    line-height: 28px;
+    @extend %ubuntu-medium;
+    font-size: 24px;
+    left: -250px;
+    bottom: 30px;
+    z-index: 3;
+  }
+}
+
+.slider-btn{
+  padding: 16px 26px;
+  border: none;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -45px;
+  right: 0;
+  cursor: pointer;
+  z-index: 3;
+  svg{
+    stroke: #000000;
+  }
+  &__left {
+    right: 60px;
+  }
+  &.slick-disabled{
+    background-color: #000000;
+    svg {
+      stroke: white;
+    }
+  }
+}

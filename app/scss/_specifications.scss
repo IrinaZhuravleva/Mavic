@@ -1,0 +1,66 @@
+.specification{
+  &__inner{
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url(../images/dron.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__item{
+    width: 50%;
+    align-self: flex-end;
+    &:nth-child(1),
+    &:nth-child(2){
+      margin-bottom: 140px;
+      align-self: flex-start;
+    }
+    &:nth-child(even){
+      .specification__box {
+      margin-right: 0;
+      margin-left: auto;}
+    }
+    position: relative;
+    &:nth-child(1)::before{
+      position: absolute;
+      content: url("../images/pointer-1.svg");
+      bottom: 14px;
+      left: 178px;
+
+    }
+    &:nth-child(2)::before{
+      position: absolute;
+      content: url("../images/pointer-3.svg");
+      bottom: -15px;
+      left: 27px;
+    }
+    &:nth-child(3)::before{
+      position: absolute;
+      content: url("../images/pointer-2.svg");
+      top: -65px;
+      left: 237px;
+    }
+    &:nth-child(4)::before{
+      position: absolute;
+      content: url("../images/pointer-4.svg");
+      top: -71px;
+      left: 171px;
+    }
+  }
+  &__box{
+    width: 280px;
+
+  }
+  &__title{
+    font-size: 21px;
+    line-height: 28px;
+    @extend %ubuntu-bold;
+    margin-bottom: 10px;
+  }
+  &__text{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+  }
+}

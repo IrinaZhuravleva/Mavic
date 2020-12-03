@@ -1,0 +1,102 @@
+.benefits{
+  &__items{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 25px;
+
+  }
+  &__num{
+    line-height: 41px;
+    font-size: 36px;
+    @extend %ubuntu-bold;
+    margin-right: 10px;
+    //align-self: flex-end;
+  }
+  &__item{
+    align-items: flex-end;
+    margin-bottom: 100px;
+    display: flex;
+    &:nth-child(even) {
+      margin-top: 20px;
+      //align-self: flex-start;
+      transform: translateY(25px);
+    }
+    //&:nth-child(odd){
+    //
+    //  .benefits__num{
+    //    align-self: flex-end;
+    //    margin-bottom: 20px;
+    //  }
+    //}
+    &:nth-child(1) {
+      position: relative;
+      &::after{
+        content: url(../images/1-2.svg);
+        position: absolute;
+        height: 45px;
+        width: 100px;
+        right: 90px;
+        bottom: 57px;
+      }
+    }
+    &:nth-child(2) {
+      margin-left: 45px;
+      position: relative;
+      &::after{
+        content: url(../images/2-3.svg);
+        position: absolute;
+        height: 45px;
+        width: 100px;
+        left: -455px;
+        bottom: -52px;
+      }
+    }
+    &:nth-child(3) {
+      position: relative;
+      margin-left: 30px;
+      &::after{
+        content: url(../images/3-4.svg);
+        position: absolute;
+        height: 45px;
+        width: 100px;
+        right: 85px;
+        bottom: 40px;
+      }
+    }
+    &:nth-child(4){
+      margin-left: 60px;
+    }
+  }
+
+  &__img{
+    position: relative;
+    margin-right: 32px;
+    img {
+      position: relative;
+    }
+    &::before{
+      content: "";
+      position: absolute;
+      width: 193px;
+      height: 128px;
+      border: 2px solid #ffffff;
+      right: -12px;
+      top: -12px;
+      z-index: 0;
+    }
+  }
+  &__info{
+    width: 300px;
+  }
+  &__info-title{
+    width: 123px;
+    font-size: 21px;
+    line-height: 24px;
+    @extend %ubuntu-bold;
+    margin-bottom: 10px;
+  }
+  &__info-text{
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
